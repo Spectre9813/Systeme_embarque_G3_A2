@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="830" viewBox="0 0 1320 830" font-family="DejaVu Sans, Arial, sans-serif">
+  <rect width="1320" height="830" fill="#ffffff"/>
+  <text x="660" y="38" text-anchor="middle" font-size="24" font-weight="bold" fill="#1f2937">Montage minimal de démonstration — station 3W</text>
+  <text x="660" y="64" text-anchor="middle" font-size="15" fill="#4b5563">Pile : Nucleo-L476RG + shield carte SD + Grove Base Shield (interrupteur VCC sur 5 V)</text>
+
+  <!-- Pile de cartes -->
+  <rect x="430" y="150" width="380" height="460" rx="14" fill="#e8f1fb" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="620" y="182" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e3a8a">Grove Base Shield</text>
+  <text x="620" y="204" text-anchor="middle" font-size="13" fill="#1e3a8a">VCC : 5 V (RTC DS1307)</text>
+  <rect x="452" y="220" width="336" height="216" rx="8" fill="#f8fafc" stroke="#94a3b8"/>
+  <text x="620" y="240" text-anchor="middle" font-size="13" fill="#475569">ports Grove utilisés</text>
+  <!-- ports -->
+  <g font-size="14" font-weight="bold" text-anchor="middle">
+    <rect x="466" y="256" width="74" height="34" rx="5" fill="#dbeafe" stroke="#2563eb"/><text x="503" y="278" fill="#1e40af">I2C</text>
+    <rect x="466" y="300" width="74" height="34" rx="5" fill="#dbeafe" stroke="#2563eb"/><text x="503" y="322" fill="#1e40af">I2C</text>
+    <rect x="466" y="344" width="74" height="34" rx="5" fill="#ffedd5" stroke="#ea580c"/><text x="503" y="366" fill="#9a3412">A2</text>
+    <rect x="466" y="388" width="74" height="34" rx="5" fill="#dcfce7" stroke="#16a34a"/><text x="503" y="410" fill="#166534">A0</text>
+    <rect x="700" y="256" width="74" height="34" rx="5" fill="#f3e8ff" stroke="#9333ea"/><text x="737" y="278" fill="#6b21a8">D6</text>
+    <rect x="700" y="300" width="74" height="34" rx="5" fill="#f3e8ff" stroke="#9333ea"/><text x="737" y="322" fill="#6b21a8">D2</text>
+  </g>
+  <rect x="452" y="452" width="336" height="64" rx="8" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="620" y="476" text-anchor="middle" font-size="15" font-weight="bold" fill="#991b1b">Shield carte SD Seeed v4.3</text>
+  <text x="620" y="498" text-anchor="middle" font-size="13" fill="#991b1b">CS sur D4 (PB5) par les connecteurs</text>
+  <rect x="452" y="530" width="336" height="64" rx="8" fill="#ecfdf5" stroke="#047857"/>
+  <text x="620" y="556" text-anchor="middle" font-size="15" font-weight="bold" fill="#065f46">STM32 Nucleo-L476RG</text>
+  <text x="620" y="578" text-anchor="middle" font-size="13" fill="#065f46">80 MHz · 1 Mo Flash · 128 Ko RAM</text>
+
+  <!-- Modules gauche -->
+  <g font-size="14">
+    <rect x="40" y="130" width="250" height="70" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="165" y="158" text-anchor="middle" font-weight="bold" fill="#111827">Grove BME280 (ou BME680)</text>
+    <text x="165" y="180" text-anchor="middle" fill="#4b5563" font-size="12">température · hygrométrie · pression</text>
+    <rect x="40" y="225" width="250" height="70" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="165" y="253" text-anchor="middle" font-weight="bold" fill="#111827">Grove RTC DS1307</text>
+    <text x="165" y="275" text-anchor="middle" fill="#4b5563" font-size="12">pile CR1225 en place</text>
+    <rect x="40" y="320" width="250" height="70" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="2"/>
+    <text x="165" y="348" text-anchor="middle" font-weight="bold" fill="#111827">Grove Light Sensor v1.3</text>
+    <text x="165" y="370" text-anchor="middle" fill="#4b5563" font-size="12">luminosité (sortie ≤ 3,3 V à vérifier)</text>
+    <rect x="40" y="415" width="250" height="70" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+    <text x="165" y="443" text-anchor="middle" font-weight="bold" fill="#111827">Grove GPS Air530Z</text>
+    <text x="165" y="465" text-anchor="middle" fill="#4b5563" font-size="12">antenne près d'une fenêtre</text>
+  </g>
+  <!-- câbles gauche -->
+  <g fill="none" stroke-width="3">
+    <path d="M290 165 C 380 165, 390 273, 466 273" stroke="#2563eb"/>
+    <path d="M290 260 C 380 260, 390 317, 466 317" stroke="#2563eb"/>
+    <path d="M290 355 C 380 355, 400 361, 466 361" stroke="#ea580c"/>
+    <path d="M290 450 C 380 450, 400 405, 466 405" stroke="#16a34a"/>
+  </g>
+  <g font-size="12" fill="#374151">
+    <text x="300" y="150">I2C1 PB8/PB9 · 0x76</text>
+    <text x="312" y="247">I2C1 · 0x68</text>
+    <text x="312" y="343">ADC1 voie 9 · PA4</text>
+    <text x="300" y="500">UART4 · PA0/PA1</text>
+  </g>
+
+  <!-- Modules droite -->
+  <g font-size="14">
+    <rect x="1030" y="130" width="250" height="70" rx="10" fill="#ffffff" stroke="#9333ea" stroke-width="2"/>
+    <text x="1155" y="158" text-anchor="middle" font-weight="bold" fill="#111827">Grove Chainable RGB LED</text>
+    <text x="1155" y="180" text-anchor="middle" fill="#4b5563" font-size="12">mode et codes d'erreur</text>
+    <rect x="1030" y="225" width="250" height="90" rx="10" fill="#ffffff" stroke="#9333ea" stroke-width="2"/>
+    <text x="1155" y="253" text-anchor="middle" font-weight="bold" fill="#111827">Grove Dual Button</text>
+    <circle cx="1120" cy="285" r="14" fill="#dc2626"/><text x="1120" y="290" text-anchor="middle" font-size="11" fill="#fff">R</text>
+    <circle cx="1190" cy="285" r="14" fill="#16a34a"/><text x="1190" y="290" text-anchor="middle" font-size="11" fill="#fff">V</text>
+    <rect x="1030" y="345" width="250" height="70" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+    <text x="1155" y="373" text-anchor="middle" font-weight="bold" fill="#111827">Carte microSD (FAT32)</text>
+    <text x="1155" y="395" text-anchor="middle" fill="#4b5563" font-size="12">dans le shield SD</text>
+  </g>
+  <g fill="none" stroke-width="3">
+    <path d="M1030 165 C 900 165, 880 273, 774 273" stroke="#9333ea"/>
+    <path d="M1030 270 C 900 270, 880 317, 774 317" stroke="#9333ea"/>
+    <path d="M1030 380 C 900 380, 880 484, 788 484" stroke="#dc2626" stroke-dasharray="7 5"/>
+  </g>
+  <g font-size="12" fill="#374151">
+    <text x="830" y="152">PB10 horloge / PA8 données</text>
+    <text x="830" y="342">PA10 rouge / PB3 vert</text>
+    <text x="1010" y="442">SPI1</text>
+  </g>
+
+  <!-- Fils Dupont ICSP -->
+  <rect x="880" y="480" width="410" height="132" rx="10" fill="#fff7ed" stroke="#c2410c" stroke-width="1.5"/>
+  <text x="1085" y="504" text-anchor="middle" font-size="14" font-weight="bold" fill="#9a3412">3 fils Dupont : ICSP du shield SD → Nucleo</text>
+  <g font-size="13" fill="#7c2d12">
+    <text x="900" y="530">ICSP 1 (MISO) → D12 = PA6</text>
+    <text x="900" y="552">ICSP 3 (SCK)  → D13 = PA5</text>
+    <text x="900" y="574">ICSP 4 (MOSI) → D11 = PA7</text>
+    <text x="900" y="598" fill="#9a3412">5 V et GND par les connecteurs empilés</text>
+  </g>
+  <path d="M880 540 C 840 540, 830 500, 788 500" fill="none" stroke="#c2410c" stroke-width="3"/>
+
+  <!-- USB -->
+  <path d="M620 594 L620 670" stroke="#6b7280" stroke-width="5"/>
+  <rect x="430" y="670" width="380" height="100" rx="12" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/>
+  <text x="620" y="700" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">PC — câble USB du ST-Link</text>
+  <text x="620" y="724" text-anchor="middle" font-size="13" fill="#374151">alimentation · téléversement (scripts\build demo)</text>
+  <text x="620" y="746" text-anchor="middle" font-size="13" fill="#374151">console USART2 115 200 bauds (PA2/PA3)</text>
+
+  <!-- Légende -->
+  <g font-size="12" fill="#374151">
+    <line x1="40" y1="640" x2="70" y2="640" stroke="#2563eb" stroke-width="3"/><text x="78" y="644">I2C</text>
+    <line x1="40" y1="664" x2="70" y2="664" stroke="#16a34a" stroke-width="3"/><text x="78" y="668">UART</text>
+    <line x1="40" y1="688" x2="70" y2="688" stroke="#ea580c" stroke-width="3"/><text x="78" y="692">analogique</text>
+    <line x1="160" y1="640" x2="190" y2="640" stroke="#9333ea" stroke-width="3"/><text x="198" y="644">numérique 2 fils</text>
+    <line x1="160" y1="664" x2="190" y2="664" stroke="#dc2626" stroke-width="3"/><text x="198" y="668">SPI</text>
+    <line x1="160" y1="688" x2="190" y2="688" stroke="#6b7280" stroke-width="3"/><text x="198" y="692">USB</text>
+    <text x="40" y="808">Ports Grove libres pour les modules tiers : A3 (eau), I2C (courant), D8 (particules).</text>
+  </g>
+</svg>
